@@ -1,7 +1,7 @@
 export const survey = [
     {
         id: 1,
-        surveyDetailsType: 'Completed',
+        surveyStatus: 'Completed',
         createdBy: 'Vikram',
         createdDate: '08-07-2025',
         surveyTemplate: 'Template 1',
@@ -9,9 +9,9 @@ export const survey = [
         scheduledTime: '09:30 AM',
         surveyExpiry: '3 days',
         stakeHoldersCount: 4,
-        stakeHoldersNames: ['ram', 'kumar', 'Usha', 'priya'],
-        surverLink: 'https://www.google.com',
-        survey_response: {
+        stakeHoldersNames: ['ram', 'kumar', 'usha', 'priya'],
+        surveyLink: 'https://www.google.com',
+        surveyResponse: {
             sprintOnTrack: 'Yes',
             teamMeetProjectGoal: 5,
             teamOverallRatings: 5,
@@ -21,7 +21,7 @@ export const survey = [
     },
     {
         id: 2,
-        surveyDetailsType: 'Inprogress',
+        surveyStatus: 'Inprogress',
         createdBy: 'Vikram',
         createdDate: '08-07-2025',
         surveyTemplate: 'Template 1',
@@ -29,9 +29,9 @@ export const survey = [
         scheduledTime: '09:30 AM',
         surveyExpiry: '3 days',
         stakeHoldersCount: 4,
-        stakeHoldersNames: ['ram', 'kumar', 'Usha', 'priya'],
-        surverLink: 'https://www.google.com',
-        survey_response: {
+        stakeHoldersNames: ['ram', 'kumar', 'usha', 'priya'],
+        surveyLink: 'https://www.google.com',
+        surveyResponse: {
             sprintOnTrack: 'Yes',
             teamMeetProjectGoal: 5,
             teamOverallRatings: 5,
@@ -41,7 +41,7 @@ export const survey = [
     },
     {
         id: 3,
-        surveyDetailsType: 'Open',
+        surveyStatus: 'Open',
         createdBy: 'Vikram',
         createdDate: '08-07-2025',
         surveyTemplate: 'Template 1',
@@ -49,9 +49,9 @@ export const survey = [
         scheduledTime: '09:30 AM',
         surveyExpiry: '3 days',
         stakeHoldersCount: 4,
-        stakeHoldersNames: ['ram', 'kumar', 'Usha', 'priya'],
-        surverLink: 'https://www.google.com',
-        survey_response: {
+        stakeHoldersNames: ['ram', 'kumar', 'usha', 'priya'],
+        surveyLink: 'https://www.google.com',
+        surveyResponse: {
             sprintOnTrack: 'Yes',
             teamMeetProjectGoal: 5,
             teamOverallRatings: 5,

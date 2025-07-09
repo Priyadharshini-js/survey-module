@@ -1,10 +1,12 @@
 import React from "react"
-import NavBar from "../components/SurveyViewPort/NavBar/NavBar"
+import NavBar from "../common/Layout/NavBar/NavBar"
+import SideBar from "../common/Layout/SideBar/SideBar"
 
 const SurveyPage = () => {
     return (
         <>
-            <NavBar />
+            {/* <NavBar /> */}
+            <SideBar/>
         </>
     )
 }

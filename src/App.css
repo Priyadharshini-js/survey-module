@@ -3,3 +3,16 @@ body {
   margin: 0;
   overflow-x: hidden;
 }
+
+.font-icon {
+  font-size: 1.5rem;
+}
+
+p {
+  margin: 0 !important;
+  font-size: 18px;
+}
+
+.gap-15{
+  gap: 15px;
+}
