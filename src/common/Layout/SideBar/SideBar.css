@@ -1,0 +1,33 @@
+.side-bar {
+    display: flex;
+    height: 150vh;
+    overflow-y: scroll;
+    background-color: var(--background-white);
+    margin-top: 50px;
+    min-width: 200px;
+    max-width: 250px;
+    overflow-x: hidden;
+}
+
+.side-bar-header {
+    border-bottom: unset !important;
+}
+
+.side-bar .item-content {
+    white-space: normal !important;
+    word-break: break-word !important;
+}
+
+/* //media query */
+
+@media screen and (max-width: 768px) {
+    /* .pro-sidebar.toggled {
+        width: 100% !important;
+    } */
+}
+
+@media screen and (min-width: 900px) {
+    /* .pro-sidebar.toggled {
+        width: 25% !important;
+    } */
+}

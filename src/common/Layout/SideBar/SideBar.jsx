@@ -1,13 +1,4 @@
 import React from 'react'
-// import {
-//     CDBSidebar,
-//     CDBSidebarContent,
-//     CDBSidebarHeader,
-//     CDBSidebarMenu,
-//     CDBSidebarMenuItem,
-//     CDBSidebarFooter,
-// } from 'cdbreact'
-
 import {
     CDBSidebar,
     CDBSidebarContent,
@@ -17,75 +8,56 @@ import {
     CDBSidebarMenuItem,
 } from 'cdbreact'
 import { NavLink } from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCompass, faStar, faFolder } from '@fortawesome/free-regular-svg-icons'
+import { faGear } from '@fortawesome/free-solid-svg-icons'
+
 
 
 const SideBar = () => {
     return (
         <>
-            {/* <CDBSidebar>
-                <CDBSidebarHeader prefix={<i className="fa fa-bars" />}>Contrast</CDBSidebarHeader>
-                <CDBSidebarContent>
-                    <CDBSidebarMenu>
-                        <CDBSidebarMenuItem icon="th-large">Dashboard</CDBSidebarMenuItem>
-                        <CDBSidebarMenuItem icon="sticky-note">Components</CDBSidebarMenuItem>
-                        <CDBSidebarMenuItem icon="credit-card" iconType="solid">
-                            Metrics
-                        </CDBSidebarMenuItem>
-                    </CDBSidebarMenu>
-                </CDBSidebarContent>
+            <aside>
+                <section>
+                    <div className='side-bar'>
+                        <CDBSidebar>
+                            <CDBSidebarHeader className='side-bar-header' prefix={<i className="fa fa-bars fa-large"></i>}>
+                            </CDBSidebarHeader>
 
-                <CDBSidebarFooter style={{ textAlign: 'center' }}>
-                    <div
-                        className="sidebar-btn-wrapper"
-                        style={{ padding: '20px 5px' }}
-                    >
-                        Sidebar Footer
+                            <CDBSidebarContent className="sidebar-content p-0">
+                                <CDBSidebarMenu>
+                                    <NavLink to="/" >
+                                        <CDBSidebarMenuItem icon='compass'>
+                                            Dashboard
+                                        </CDBSidebarMenuItem>
+                                    </NavLink>
+                                    <NavLink to="/accounts" >
+                                        <CDBSidebarMenuItem icon='folder'>
+                                            Accounts
+                                        </CDBSidebarMenuItem>
+                                    </NavLink>
+                                    <NavLink to="/surveys" >
+                                        <CDBSidebarMenuItem icon='star'>
+                                            Surveys
+                                        </CDBSidebarMenuItem>
+                                    </NavLink>
+                                    <NavLink to="/settings" >
+                                        <CDBSidebarMenuItem icon='cog'>
+                                            settings
+                                        </CDBSidebarMenuItem>
+                                    </NavLink>
+                                </CDBSidebarMenu>
+                            </CDBSidebarContent>
+
+                            <CDBSidebarFooter>
+                                <div className='copyright text-center p-3'>
+                                    <span> @2025 Copyright</span>
+                                </div>
+                            </CDBSidebarFooter>
+                        </CDBSidebar>
                     </div>
-                </CDBSidebarFooter>
-            </CDBSidebar> */}
-
-
-
-            <div style={{ display: 'flex', height: '100vh', overflow: 'scroll initial' }}>
-                <CDBSidebar textColor="#fff" backgroundColor="#333">
-                    <CDBSidebarHeader prefix={<i className="fa fa-bars fa-large"></i>}>
-                        <a href="/" className="text-decoration-none" style={{ color: 'inherit' }}>
-                            Sidebar
-                        </a>
-                    </CDBSidebarHeader>
-
-                    <CDBSidebarContent className="sidebar-content">
-                        <CDBSidebarMenu>
-                            <NavLink exact to="/" activeClassName="activeClicked">
-                                <CDBSidebarMenuItem icon="columns">Dashboard</CDBSidebarMenuItem>
-                            </NavLink>
-                            <NavLink exact to="/tables" activeClassName="activeClicked">
-                                <CDBSidebarMenuItem icon="table">Tables</CDBSidebarMenuItem>
-                            </NavLink>
-                            <NavLink exact to="/profile" activeClassName="activeClicked">
-                                <CDBSidebarMenuItem icon="user">Profile page</CDBSidebarMenuItem>
-                            </NavLink>
-                            <NavLink exact to="/analytics" activeClassName="activeClicked">
-                                <CDBSidebarMenuItem icon="chart-line">Analytics</CDBSidebarMenuItem>
-                            </NavLink>
-
-                            <NavLink exact to="/hero404" target="_blank" activeClassName="activeClicked">
-                                <CDBSidebarMenuItem icon="exclamation-circle">404 page</CDBSidebarMenuItem>
-                            </NavLink>
-                        </CDBSidebarMenu>
-                    </CDBSidebarContent>
-
-                    <CDBSidebarFooter style={{ textAlign: 'center' }}>
-                        <div
-                            style={{
-                                padding: '20px 5px',
-                            }}
-                        >
-                            Sidebar Footer
-                        </div>
-                    </CDBSidebarFooter>
-                </CDBSidebar>
-            </div>
+                </section>
+            </aside>
         </>
     )
 }
