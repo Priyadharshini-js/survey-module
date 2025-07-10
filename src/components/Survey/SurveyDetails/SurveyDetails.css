@@ -1,4 +1,4 @@
-.survey-details .detail-row {
+.details-view .detail-row {
     display: flex;
     flex-direction: column;
     margin-bottom: 14px;
@@ -6,15 +6,46 @@
 
 }
 
-.survey-details .detail-row span.label {
-    font-size: 18px;
-    font-weight: 500;
-    margin-bottom: 7px !important;
+.value.completed {
+    background-color: var(--success-color);
 }
 
-.survey-details .detail-row span.value {
-    font-size: 16px;
-    font-weight: 400;
-    margin-bottom: 14px !important;
+.value.open {
+    background-color: var(--color-red);
+}
 
+.value.inprogress {
+    background-color: var(--yellow);
+}
+
+.value.completed,
+.value.open,
+.value.inprogress {
+    color: var(--background-white);
+    border-radius: 18px;
+    border: unset;
+    padding: 5px 10px;
+}
+
+.details-view .dates-bg,
+.link-bg {
+    background-color: var(--background-color);
+    padding: 4px;
+    margin-right: 4px !important;
+    border-radius: 4px;
+}
+
+.name-bg {
+    border-radius: 50%;
+    color: var(--background-white);
+    border: unset;
+    width: 32px;
+    height: 32px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.more-count {
+    background-color: #6c757d;
 }

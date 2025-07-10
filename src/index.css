@@ -9,5 +9,34 @@
     --yellow: #F7DB11;
     --box-shadow: 0px 2px 4px #E4E6E9;
     --grey: #808080bd;
-    --border-color: #F7F7F7
+    --border-color: #F7F7F7;
+    --border-bottom-color: #49505714;
+    --footer-bottom-color: #4859b961;
+    --text-in-btn: #FDFDFE;
+    --color-red: red;
+    --color-green: green;
+    --color-low: #E49694;
+    --color-high: #6DDFA7;
+}
+
+
+@font-face {
+    font-family: "Roboto-Light";
+    src: url("./assets/font/Roboto/static/Roboto-Light.ttf");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url("./assets/font/Roboto/static/Roboto-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto-Medium";
+    src: url("./assets/font/Roboto/static/Roboto-Medium.ttf");
+    font-weight: 600;
+    font-style: normal;
 }

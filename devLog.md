@@ -11,14 +11,29 @@ src/
 │   │   ├── SurveyDetails/
 │   │   │   ├── SurveyDetails.jsx
 │   │   │   └── SurveyDetails.css
-│
-│   ├── common/
+│   |   ├── SurveyGroup/
+│   │   │   ├── SurveyGroup.jsx
+│   │   |
+|   |   ├── SurveyResponse/
+│   │   │   ├── SurveyResponse.jsx
+│   │   │   ├── QuestionList.jsx
+│   │   │   ├── AnswerRender.jsx
+│   │   │   ├── BarType.jsx
+│   │   │   ├── ChartType.jsx
+│   │   │   ├── EmojiType.jsx
+│   │   │   ├── StarType.jsx
+│   │   │   ├── RadioType.jsx
+│   │   │   └── SurveyResponse.css  
+│-------── common/
 │   │   ├── Images/
 │   │   │   └── Images.jsx
 │   │   └── layout/
 │   │       ├── BreadCrumbs/
 │   │       │   ├── BreadCrumbs.jsx
-│   │       │   └── BreadCrumbs.css
+|   |       |
+│   │       ├── Header/
+│   │       │   ├── Header.jsx
+│   │       │     
 │   │       ├── Navbar/
 │   │       │   ├── Navbar.jsx
 │   │       │   └── Navbar.css
@@ -28,11 +43,12 @@ src/
 │
 ├── pages/
 │   └── SurveyPage.jsx
-│
+│   |__SurveyPage.css
 ├── routes/
 │   └── routes.jsx
 │
 ├── assets/
 │   └── images/
-│       └── logo.png
-       
+│   |   └── logo.png
+    |____font
+         

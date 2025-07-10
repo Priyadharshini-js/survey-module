@@ -1,4 +1,19 @@
 .survey-layout {
     margin-top: 70px;
     padding: 0;
+    margin-left: 170px;
+    overflow: auto;
+}
+
+/* media query */
+
+@media screen and (max-width:768px) {
+    .survey-layout {
+
+        margin-left: 80px !important;
+    }
+    .bg-white{
+        z-index: 999;
+        
+    }
 }
