@@ -4,7 +4,7 @@ import SurveyResponse from "../SurveyResponseUI/SurveyResponse"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons"
 import Header from "../../common/Layout/Header/Header"
-import { survey } from "../config/surveyConfig"
+import axios from 'axios'
 
 const SurveyGroup = () => {
     const [getData, setGetData] = useState([]);
@@ -12,15 +12,28 @@ const SurveyGroup = () => {
 
     //function for fetchData
     useEffect(() => {
-        console.log("Survey data:", survey);
-        setGetData(survey)
-        setSelectedSurvey(survey[0])
+        const fetchData = async () => {
+            try {
+                const url = await axios.get('http://localhost:3000/api/getSurveyDetails')
+                setGetData(url.data)
+                setSelectedSurvey(url.data[0])
+            } catch (err) {
+                console.log("Failed to fetch data", err)
+            }
+        }
+        fetchData()
     }, [])
 
     //post method to send details
-    const handlePost = () => {
-        console.log("Simulated POST payload:", selectedSurvey);
-        alert("Survey resent successfully (simulated)");
+    const handlePost = async () => {
+        try {
+            const res = await axios.post('http://localhost:3000/api/postSurveysDetails', selectedSurvey)
+            console.log("POST success:", res.data.data);
+            alert("Survey resent successfully!");
+        } catch (err) {
+            console.error("POST error:", err);
+            alert("Failed to resend survey");
+        }
     };
 
 
