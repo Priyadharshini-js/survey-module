@@ -41,7 +41,7 @@ const EmojiType = ({ value }) => {
     ]
 
     return (
-        <div className="row justify-content-start">
+        <div className="row row-15 justify-content-start">
             {emojiResponses.map((item) => (
                 <div
                     key={item.id}

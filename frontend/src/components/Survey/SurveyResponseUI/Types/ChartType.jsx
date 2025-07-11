@@ -39,7 +39,7 @@ export default function ChartType({ value }) {
     if (!value) return null
 
     return (
-        <div className="row gap-3 justify-content-center">
+        <div className="row row-15 gap-3 justify-content-center">
             {chartLevels.map((item, index) => (
                 <div
                     key={index}
