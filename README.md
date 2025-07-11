@@ -1,0 +1,1 @@
+A fully responsive, modular, and reusable Survey Management UI built using React + Vite, tailored for enterprise-grade performance and scalability. This page handles survey overview and stakeholder feedback with clean visual components and data-driven rendering.
