@@ -161,4 +161,8 @@ span.label {
     font-size: 14px;
 
   }
+
+  .breadcrumb li {
+    font-size: 14px;
+  }
 }

@@ -7,7 +7,7 @@ import { surveyShape } from "../config/surveyPropTypes"
 const SurveyResponse = ({ data }) => {
     const details = data;
 
-    if (!details) return null;
+    if (!details) return <p>No survey selected</p>;
 
     return (
         <>
@@ -15,7 +15,7 @@ const SurveyResponse = ({ data }) => {
                 <div className="response-container">
                     <div className="card">
                         <div className="card-body">
-                            <div className="d-flex align-items-center justify-content-between mb-2">
+                            <div className="d-flex align-items-center justify-content-between mb-2 response-row-nav">
                                 <h2 className="label">Survey response</h2>
                                 <div className="d-flex gap-15 response-row-header">
                                     <span className="label">Feedback by:</span>

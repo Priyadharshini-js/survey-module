@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons"
 import Header from "../../common/Layout/Header/Header"
 import axios from 'axios'
+import ErrorBoundary from "../ErrorBoundary/ErrorBoundary"
 
 const SurveyGroup = () => {
     const [getData, setGetData] = useState([]);
@@ -51,14 +52,24 @@ const SurveyGroup = () => {
                                 </button>
                             </div>
                         </div>
-                        <div className="row row-15">
-                            <div className="col-lg-4 col-md-12 col-sm-12">
-                                <SurveyDetails data={selectedSurvey} />
-                            </div>
-                            <div className="col-lg-8 col-md-12 col-sm-12">
-                                <SurveyResponse data={selectedSurvey} />
-                            </div>
-                        </div>
+                        <ErrorBoundary>
+                            {selectedSurvey ? (
+                                <>
+                                    <div className="row row-15">
+                                        <div className="col-lg-4 col-md-12 col-sm-12">
+                                            <SurveyDetails data={selectedSurvey} />
+                                        </div>
+                                        <div className="col-lg-8 col-md-12 col-sm-12">
+                                            <SurveyResponse data={selectedSurvey} />
+                                        </div>
+                                    </div>
+                                </>
+                            ) : (
+                                <div className="col-12 text-center">
+                                    <p>Loading failed or no data available.</p>
+                                </div>
+                            )}
+                        </ErrorBoundary>
                     </div>
                 </div>
             </section>

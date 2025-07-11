@@ -7,7 +7,7 @@ const SurveyDetails = ({ data }) => {
 
     const colors = ['var(--color-high)', 'var(--color-low)', 'var(--success-color)', 'var(--tertiary-color)', 'var(--yellow)'];
 
-    if (!details) return null;
+    if (!details) return <p>No survey selected</p>;
 
     //funtion to copy link
     const handleCopy = () => {
