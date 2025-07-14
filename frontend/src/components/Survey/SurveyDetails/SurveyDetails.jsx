@@ -52,11 +52,13 @@ const SurveyDetails = ({ data }) => {
                             </div>
                             <div className="detail-row">
                                 <span className="label">Survey dates</span>
-                                <div className="d-flex">
+                                <span className="row row-15">
                                     {details.dates?.map((date, index) => (
-                                        <span key={index} className={`value dates-bg`}> {date}</span>
+                                        <div className="col-lg-4 col-md-3 col-sm-12 p-0">
+                                            <span key={index} className={`value dates-bg`}> {date}</span>
+                                        </div>
                                     ))}
-                                </div>
+                                </span>
                             </div>
                             <div className="detail-row">
                                 <span className="label">Scheduled time</span>

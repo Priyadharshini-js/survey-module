@@ -20,8 +20,8 @@ const BarType = ({ value }) => {
                         })}
                     </div>
                     <div className="d-flex justify-content-between mb-1">
-                        <span className="text-muted small">Extremely Unsatisfied</span>
-                        <span className="text-muted small">Extremely Satisfied</span>
+                        <span className="text-muted small">Extremely unsatisfied</span>
+                        <span className="text-muted small text-end">Extremely satisfied</span>
                     </div>
                 </div>
             </div>
