@@ -5,7 +5,7 @@ const SurveyDetails = ({ data }) => {
     const [copied, setCopied] = useState(false);
     const details = data;
 
-    const colors = ['var(--color-high)', 'var(--color-low)', 'var(--success-color)', 'var(--tertiary-color)', 'var(--yellow)'];
+    const colors = ['var(--name1-bg)', 'var(--name2-bg)', 'var(--name3-bg)'];
 
     if (!details) return <p>No survey selected</p>;
 

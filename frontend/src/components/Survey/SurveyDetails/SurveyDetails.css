@@ -44,8 +44,10 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    margin-left: -5px !important;
+    mix-blend-mode: multiply;
 }
 
 .more-count {
-    background-color: #6c757d;
+    background-color: var(--more-count-bg);
 }
