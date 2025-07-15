@@ -46,6 +46,11 @@
     align-items: center;
     margin-left: -5px !important;
     mix-blend-mode: multiply;
+    font-weight: bold;
+}
+
+.name-bg:nth-child(1) {
+    color: var(--secondary-color);
 }
 
 .more-count {
