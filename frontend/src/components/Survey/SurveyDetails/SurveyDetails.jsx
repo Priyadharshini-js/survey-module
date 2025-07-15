@@ -54,8 +54,8 @@ const SurveyDetails = ({ data }) => {
                                 <span className="label">Survey dates</span>
                                 <span className="row row-15">
                                     {details.dates?.map((date, index) => (
-                                        <div className="col-lg-4 col-md-3 col-sm-12 p-0">
-                                            <span key={index} className={`value dates-bg`}> {date}</span>
+                                        <div className="col-lg-4 col-md-3 col-sm-12 p-0" key={index}>
+                                            <span className={`value dates-bg`}> {date}</span>
                                         </div>
                                     ))}
                                 </span>

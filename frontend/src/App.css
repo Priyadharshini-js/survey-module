@@ -102,11 +102,14 @@ span {
 }
 
 a,
-button {
+a:focus-visible,
+button,
+button:focus-visible {
   text-decoration: none !important;
   font-size: 14px;
   font-family: "Roboto-Medium";
   color: var(--secondary-color);
+  box-shadow: unset !important;
 }
 
 .row-15>* {
